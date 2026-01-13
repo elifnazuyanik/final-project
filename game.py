@@ -1,6 +1,8 @@
 import pgzrun
 import random
 
+print("selam")
+
 # Oyun penceresi
 WIDTH = 6
 HEIGHT = 650
@@ -63,6 +65,7 @@ def on_mouse_down(button, pos):
         if tetris.collidepoint(pos) or duck.collidepoint(pos) or muz.collidepoint(pos):
             damage += 3
             health -= 5
+
 
 
 pgzrun.go()
